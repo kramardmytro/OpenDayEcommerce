@@ -15,13 +15,8 @@ function submitting(){
 	if ( password === inputValue) {
 	  $('div.checkpw-content').fadeOut('fast');
 	  $('#gradient').removeClass( 'gradient' ).addClass('animated flash pinkBg');
-	  document.getElementById('audio1').play();
-	  
-	  function audio2() {
-		  document.getElementById('audio2').play();
-		};
-	  setTimeout(audio2, 1500);
-	  
+	  document.getElementById('audio').play();
+	  	  
 	  function successMessage() {
 		  $('div.success-message').fadeIn(0);
 		  $('#sm1').fadeIn(0).addClass('animated fadeInDownBig').delay(2500).fadeOut('slow');
