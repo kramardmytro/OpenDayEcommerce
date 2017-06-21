@@ -1,0 +1,157 @@
+@font-face {
+	font-family: Exo;
+	src: url(../fonts/exo_2_black.otf);
+}
+
+body {
+	background-color: #f7f7f7;
+	min-height: 100vh;
+	font-family: Exo, Arial, Helvetica, sans-serif;
+}
+
+.new-font {
+	color: #fff;
+}
+
+h1 {
+	margin-bottom: 2em;
+}
+
+.uppercase {
+	text-transform: uppercase;	
+}
+
+.checkpw {
+	position: relative;
+	min-height: 65vh;
+	padding: 4em 0;
+	margin-bottom: 1em;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+	clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+	-webkit-clip-path: url("#clipping");
+  	clip-path: url("#clipping");
+}
+
+#answer {
+	text-align: center;
+	height: 46px;
+	font-size: 18px;
+	border-radius: 23px;
+	color: #999;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+input[type="button"] {
+	border-radius: 23px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+h2.new-font {
+	color: #6D4CA5;
+	padding-bottom: 1em;
+}
+
+div.details p.new-font {
+	font-size: 1.25em;
+	color: #999;
+	padding-bottom: 2em;
+}
+
+i {
+	color: #5cb85c;
+}
+
+.pink {
+	color: #e83979;
+}
+
+.gradient {
+	background: linear-gradient(30deg, #3e23ff, #3cff3c, #ff2362, #2dafe6, #ff00ff, #ff8000);
+	background-size: 1200% 1200%;
+	-webkit-animation: AnimationName 180s ease infinite;
+	-moz-animation: AnimationName 180s ease infinite;
+	-o-animation: AnimationName 180s ease infinite;
+	animation: AnimationName 180s ease infinite;
+}
+
+.error {
+	opacity: 0;
+	transition: ease 0.25s;
+}
+
+.error-out {
+	opacity: 1;
+	transition: ease 0.25s;	
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+
+.pinkBg {
+	background: url(../img/dance_bg.gif);
+}
+
+#dance {
+	width: 90%;
+	margin: 0 auto;
+	display: none;
+}
+
+#dance img {
+	max-width: 100%;
+	height: auto;
+}
+
+div.success-message {
+	position: relative;
+	width: 90%;
+	display: none;
+	margin: 0 auto;
+}
+
+div.success-message p {
+	position: absolute;
+	font-size: 4em;
+	display: none;
+	margin: 0;
+	width: 100%;
+	top: -1em;
+	text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+	div.success-message p {
+		font-size: 1.5em;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	div.success-message p {
+		font-size: 3em;
+	}	
+}
