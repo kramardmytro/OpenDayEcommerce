@@ -21,22 +21,36 @@ h1 {
 	text-transform: uppercase;	
 }
 
-.checkpw {
+#gradient {
 	position: relative;
 	min-height: 65vh;
 	padding: 4em 0;
 	margin-bottom: 1em;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-ms-flex-align: center;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
 	-webkit-align-items: center;
-	-webkit-box-align: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
 	align-items: center;
+	-webkit-flex-align: center;
+	-moz-flex-align: center;
+	-ms-flex-align: center;
+	-o-flex-align: center;
+	flex-align: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-box-align: center;
+	-o-box-align: center;
+	box-align: center;
 	-webkit-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+	-moz-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+	-ms-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+	-o-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
 	clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
-	-webkit-clip-path: url("#clipping");
-  	clip-path: url("#clipping");
 }
 
 #answer {
@@ -78,6 +92,7 @@ i {
 	-webkit-animation: AnimationName 180s ease infinite;
 	-moz-animation: AnimationName 180s ease infinite;
 	-o-animation: AnimationName 180s ease infinite;
+	-ms-animation: AnimationName 180s ease infinite;
 	animation: AnimationName 180s ease infinite;
 }
 
@@ -112,13 +127,21 @@ i {
     100%{background-position:90% 0%}
 }
 
-.pinkBg {
+.pixelBg {
 	background: url(../img/dance_bg.gif);
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -webkit-animation-duration: 0.65s;
+  -moz-animation-duration: 0.65s;
+  -o-animation-duration: 0.65s;
+  -ms-animation-duration: 0.65s;
+  animation-duration: 0.65s;
 }
 
 #dance {
-	width: 90%;
-	margin: 0 auto;
 	display: none;
 }
 
@@ -129,7 +152,7 @@ i {
 
 div.success-message {
 	position: relative;
-	width: 90%;
+	width: 94%;
 	display: none;
 	margin: 0 auto;
 }
@@ -139,7 +162,8 @@ div.success-message p {
 	font-size: 4em;
 	display: none;
 	margin: 0;
+	padding: 0;
 	width: 100%;
-	top: -1em;
+	top: -1.25em;
 	text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
