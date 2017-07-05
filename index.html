@@ -3,7 +3,7 @@
 <head>
 <link href="favicon_avon.png" sizes="16x16" rel="shortcut icon" type="image/png">
 <meta charset="utf-8">
-<title>E-Commerce Open Day</title>
+<title>ECOMMERCE OPEN DAY</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -14,27 +14,8 @@
 </head>
 
 <body>
-
-<div id="gradient" class="container-fluid gradient">
-    <div class="row success-message new-font uppercase text-center center-block">
-        <div class="col-md-12">
-            <p id="sm1">Ах ти ж хитрюга!</p>
-            <p id="sm2">Відповідь правильна!</p>
-            <p id="sm3">Чекаємо на тебе <span class="pink">27 липня</span><br>о <span class="pink">14.00</span> у <span class="pink">316</span> аудиторії</p>
-            <p id="sm4">А поки <span class="pink">додай гучності</span><br>та розтруси жирок!</p>
-        </div>
-    </div>
-    <div id="dance" class="row center-block">
-        <div class="col-sm-4">
-        	<img src="img/dance3.gif" class="img-responsive center-block">
-        </div>
-        <div class="col-sm-4">
-        	<img src="img/dance.gif" class="img-responsive center-block">
-        </div>
-        <div class="col-sm-4">
-        	<img src="img/dance3.gif" class="img-responsive center-block">
-        </div>
-    </div>
+<!-- Top gradient view -->
+<div id="gradient" class="container-fluid">
     <div class="container checkpw-content">
         <div class="row new-font">
         	<div class="col-md-12">
@@ -64,11 +45,34 @@
         </div>
     </div>
 </div>
-
-<div class="container-fluid">
+<!-- Top animated view -->
+<div id="animation" class="container-fluid">
+    <div class="container success-message">
+        <div class="row new-font uppercase">
+            <div class="col-xs-12">
+                <p id="sm1" class="text-center">Ах ти ж хитрюга!<br>Відповідь <span class="pink">правильна!</span></p>
+                <p id="sm2" class="text-center">Чекаємо на тебе <span class="pink">27 липня</span><br>о <span class="pink">14.00</span> у <span class="pink">316</span> аудиторії</p>
+                <p id="sm3" class="text-center">А поки <span class="pink">додай гучності</span><br>та розтруси жирок!</p> 
+            </div>
+        </div>
+        <div id="dance" class="row">
+            <div class="col-xs-4">
+              <img src="img/dance3.gif" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-4">
+              <img src="img/dance.gif" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-4">
+              <img src="img/dance3.gif" class="img-responsive center-block">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Instructions -->
+<div id="instructions" class="container-fluid">
 	<div class="container">
     	<div class="row">
-        	<h2 class="text-center new-font uppercase">Хочеш потрапити на <span class="pink">Open Day</span> відділу <span class="pink">E-Commerce?</span><br>Для цього тобі потрібен <span class="pink">пароль</span>!</h2>
+        	<h2 class="text-center new-font uppercase">Хочеш потрапити на <span class="pink">Open Day</span> відділу <span class="pink">eCommerce?</span><br>Для цього тобі потрібен <span class="pink">пароль</span>!</h2>
         <div>
     	<div class="row details">
         	<div class="col-md-4">
@@ -86,10 +90,8 @@
         <div>
     </div>
 </div>
-
 <audio id="audio">
   <source src="audio/sound.mp3" type="audio/mp3">
 </audio>
-
 </body>
 </html>

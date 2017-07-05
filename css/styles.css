@@ -4,28 +4,16 @@
 }
 
 body {
-	background-color: #f7f7f7;
+	background-color: #fff;
 	min-height: 100vh;
 	font-family: Exo, Arial, Helvetica, sans-serif;
-}
-
-.new-font {
-	color: #fff;
-}
-
-h1 {
-	margin-bottom: 2em;
-}
-
-.uppercase {
-	text-transform: uppercase;	
+  position: relative;
 }
 
 #gradient {
-	position: relative;
-	min-height: 65vh;
-	padding: 4em 0;
-	margin-bottom: 1em;
+  width: 100%;
+	min-height: 70vh;
+  position: absolute;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -51,6 +39,98 @@ h1 {
 	-ms-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
 	-o-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
 	clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  background: linear-gradient(30deg, #3e23ff, #3cff3c, #ff2362, #2dafe6, #ff00ff, #ff8000);
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 180s ease infinite;
+  -moz-animation: AnimationName 180s ease infinite;
+  -o-animation: AnimationName 180s ease infinite;
+  -ms-animation: AnimationName 180s ease infinite;
+  animation: AnimationName 180s ease infinite;
+  z-index: 500
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:90% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:90% 0%}
+}
+
+div.checkpw-content {
+  animation-duration: 1.5s;
+  animation-delay: 0.25s;
+  animation-iteration-count: 1;
+}
+
+#animation {
+  background: url(../img/dance_bg.gif);
+  top: 0px;
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  display: -webkit-box !important;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box !important;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox !important;      /* TWEENER - IE 10 */
+  display: -webkit-flex !important;     /* NEW - Chrome */
+  display: flex !important;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-flex-align: center;
+  -moz-flex-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  flex-align: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -webkit-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  -moz-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  -ms-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  -o-clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 0);
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  -ms-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  display: none;
+  z-index: 100;
+}
+
+.new-font {
+  color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;  
+}
+
+h1 {
+  margin-bottom: 2em;
 }
 
 #answer {
@@ -86,16 +166,6 @@ i {
 	color: #e83979;
 }
 
-.gradient {
-	background: linear-gradient(30deg, #3e23ff, #3cff3c, #ff2362, #2dafe6, #ff00ff, #ff8000);
-	background-size: 1200% 1200%;
-	-webkit-animation: AnimationName 180s ease infinite;
-	-moz-animation: AnimationName 180s ease infinite;
-	-o-animation: AnimationName 180s ease infinite;
-	-ms-animation: AnimationName 180s ease infinite;
-	animation: AnimationName 180s ease infinite;
-}
-
 .error {
 	opacity: 0;
 	transition: ease 0.25s;
@@ -104,41 +174,6 @@ i {
 .error-out {
 	opacity: 1;
 	transition: ease 0.25s;	
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:90% 0%}
-    50%{background-position:10% 100%}
-    100%{background-position:90% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:90% 0%}
-    50%{background-position:10% 100%}
-    100%{background-position:90% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:90% 0%}
-    50%{background-position:10% 100%}
-    100%{background-position:90% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:90% 0%}
-    50%{background-position:10% 100%}
-    100%{background-position:90% 0%}
-}
-
-.pixelBg {
-	background: url(../img/dance_bg.gif);
-  -webkit-animation-iteration-count: 3;
-  -moz-animation-iteration-count: 3;
-  -o-animation-iteration-count: 3;
-  -ms-animation-iteration-count: 3;
-  animation-iteration-count: 3;
-  -webkit-animation-duration: 0.65s;
-  -moz-animation-duration: 0.65s;
-  -o-animation-duration: 0.65s;
-  -ms-animation-duration: 0.65s;
-  animation-duration: 0.65s;
 }
 
 #dance {
@@ -152,18 +187,18 @@ i {
 
 div.success-message {
 	position: relative;
-	width: 94%;
 	display: none;
-	margin: 0 auto;
 }
 
-div.success-message p {
+#sm1, #sm2, #sm3, #sm4 {
 	position: absolute;
 	font-size: 4em;
 	display: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+  width: 100%;
 	top: -1.25em;
 	text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+#instructions {
+  position: relative;
 }
