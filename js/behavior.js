@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
   // Password checking and animated section
   function submitting(){
-    var password = 'test';
+    var password = '123';
     password = password.toUpperCase();
     var inputValue = $('#answer').val().toUpperCase();
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
         //$('#gradient').fadeIn('slow');
       //});
 
-      setTimeout(location.reload.bind(location), 42000);
+      setTimeout(location.reload.bind(location), 43000);
 
       } else {
         $('#error').removeClass('error').addClass('error-out');
