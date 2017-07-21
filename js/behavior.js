@@ -44,28 +44,24 @@ $(document).ready(function() {
         $(this).removeClass(bounceIn).addClass(bounceOut);
       });
 
-      $('#sm2').delay(6000).fadeIn(0).addClass(bounceIn).delay(2500).queue(function() {
+      $('#sm2').delay(6000).fadeIn(0).addClass(bounceIn).delay(3500).queue(function() {
         $(this).removeClass(bounceIn).addClass(bounceOut);
       });
 
-      $('#sm3').delay(9500).fadeIn(0).addClass(bounceIn).delay(2500).queue(function() {
+      $('#sm3').delay(10500).fadeIn(0).addClass(bounceIn).delay(2500).queue(function() {
         $(this).removeClass(bounceIn).addClass(bounceOut);
       });
 
       $('#answer').val('');
 
-      $('#dance').delay(13000).fadeIn(0).addClass('animated bounceInDown');
+      $('#dance').delay(14000).fadeIn(0).addClass('animated bounceInDown');
 
       $('#dance').delay(27000).fadeOut('slow').delay(1000).queue(function() {
         $(this).removeClass('animated bounceInDown');
       });
 
       $('div.success-message').delay(40000).fadeOut(0);
-
-      //$('#animation').delay(40000).fadeOut('slow', function() {
-        //$('#gradient').fadeIn('slow');
-      //});
-
+	  
       setTimeout(location.reload.bind(location), 43000);
 
       } else {
