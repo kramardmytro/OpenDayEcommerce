@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
   // Password checking and animated section
   function submitting(){
-    var password = '9';
+    var password = '10';
     password = password.toUpperCase();
     var inputValue = $('#answer').val().toUpperCase();
 
