@@ -70,6 +70,14 @@ $(document).ready(function() {
           $('#error').removeClass('error-out').addClass('error');
           });
         };
+		document.getElementById('answer').addEventListener('keydown', function (event) {
+			if (event.keyCode == 8) {
+				$('#error').removeClass('error-out').addClass('error');
+			}
+			if (event.keyCode == 46) {
+				$('#error').removeClass('error-out').addClass('error');
+			}
+		});
   };
   // Cheking password on button click
   $('#submitButton').click(function() {
